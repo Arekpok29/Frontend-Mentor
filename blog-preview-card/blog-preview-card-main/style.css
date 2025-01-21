@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Open+Sans:wght@300&family=Outfit:wght@100..900&family=Poppins:wght@500;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: "Figtree", serif;
+    background-color: hsl(47, 88%, 63%);
+    height: 100svh;
+    display: grid;
+    place-items: center;
+    
+    
+}
+
+
+
+
+
+
+.card{
+   
+    
+    background-color: white;
+    border-radius: 1rem;
+    width: 22rem;
+    box-shadow: 0.5rem 0.5rem 0 black;
+    border: 1px solid black;
+}
+
+.card .top-image{
+    display: flex;
+   
+    justify-self: center;
+    max-width: 100%;
+    margin: 1rem;
+    width: 20rem;
+   
+   
+    border-radius: 1rem;
+    
+}
+
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin: auto 1rem;
+    
+}
+
+.card-content .post-type{
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.2rem;
+    font-weight: 600;
+
+    background-color: hsl(47, 88%, 63%);
+}
+
+.card-content .post-date{
+    color: hsl(0, 0%, 7%);
+}
+
+.card-content .post-description{
+    color: hsl(0, 0%, 42%);
+    font-size: 1rem;
+}
+
+.card-content .author{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.card-content .author .profile-image{
+    width: 2.5rem;
+    height: auto;
+}
+
+.card-content .author .author-name{
+    margin-left: 1rem;
+    font-weight: 600;
+}
+    
+
