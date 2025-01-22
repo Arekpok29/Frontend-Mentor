@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Young Serif", serif;
+    font-family: "Outfit", serif;
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100svh;
+    
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: white;
+    max-width: 35rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 6rem 0;
+    
+    
+    
+}
+
+h1{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+.container .img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+}
+
+p{
+    font-size: 0.8rem;
+
+}
+
+.container .preparation-time{
+    padding: 1.5rem;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 1rem;
+}
+
+.container .preparation-time ul li{
+    margin-left: 2rem;
+    font-weight: 200;
+
+}
+.container .preparation-time ul{
+    margin-top: 0.5rem;
+    text-indent: 1rem;
+    
+
+}
+
+.container .preparation-time h3{
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: hsl(332, 51%, 32%);
+}
+
+.container .preparation-time span{
+    font-weight: 600;
+}
+
+.container .ingredients ul li{
+    margin-left: 1rem;
+    margin-top: 0.4rem;
+    font-weight: 200;
+}
+
+.container .ingredients ul{
+    margin-top: 1rem;
+    text-indent: 1rem;
+}
+
+.container .instructions ol li{
+    margin-top: 0.3rem;
+    font-weight: 200;
+
+}
+
+.container .instructions ol{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.container .instructions ol li span{
+    font-weight: 600;
+}
+
+.container ol li::marker{
+   color: hsl(332, 51%, 32%);
+}
+
+.container ul li::marker{
+   color: hsl(332, 51%, 32%);
+}
+
+.container .nutrition p{
+    margin: 1rem 0;
+    
+}
+
+.container .nutrition table{
+    margin-left: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.container .nutrition table td{
+    padding: 0.3rem 1rem;
+    border-bottom: 1px solid lightgray;
+    font-weight: 200;
+}
+
+.container .nutrition table td:last-child{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.container .nutrition table tr:last-child td{
+    border-bottom: none;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid lightgray;
+}
