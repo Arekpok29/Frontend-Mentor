@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+body{
+    font-family: "Fraunces", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.wrapper{
+    display: flex;
+
+    width: 40rem;
+    height: 30rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+}
+
+.image{
+
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.wrapper .product-type{
+    font-family: "Montserrat", serif;
+    font-size: 0.8rem;
+    
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+}
+
+h2{
+    font-size: 2rem;
+    
+    line-height: 1.9rem;
+}
+
+.wrapper .content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+    padding: 2.5rem;
+
+}
+
+.wrapper .text{
+    color: hsl(228, 12%, 48%);
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+.wrapper .price{
+    display: flex;
+    align-items: center;
+
+}
+
+.wrapper .price .old-price{
+    padding-left: 2rem;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.wrapper .price .promo-price{
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+
+
+}
+
+.wrapper button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+
+}
+
+.wrapper button:hover{
+   background-color: darkgreen;
+}
+
+@media(max-width: 600px){
+    .wrapper{
+        
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .image{
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapper .content{
+        width: 100%;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+}
